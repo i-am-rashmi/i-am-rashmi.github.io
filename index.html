@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rashmi · Backend Engineer</title>
+  <meta name="description" content="Rashmi — senior backend engineer. Distributed systems, Java, Kafka, AWS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --card: #ffffff;
+      --ink: #1d1b19;
+      --muted: #6b655e;
+      --line: #e7e0d6;
+      --accent: #c2410c;
+      --accent-ink: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161412;
+        --card: #1f1c19;
+        --ink: #f3eee7;
+        --muted: #a39b91;
+        --line: #332e29;
+        --accent: #fb923c;
+        --accent-ink: #1d1b19;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 Inter, system-ui, sans-serif;
+    }
+    main {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 40px 32px;
+    }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .role { margin-top: 6px; color: var(--accent); font-weight: 500; }
+    p.about { margin-top: 18px; color: var(--muted); }
+    .stack {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 0;
+      list-style: none;
+    }
+    .stack li {
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: var(--muted); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    footer { margin-top: 28px; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Rashmi</h1>
+    <div class="role">Senior Backend Engineer · Bengaluru</div>
+    <p class="about">
+      7+ years building distributed systems at Intuit (QuickBooks) and Swiggy (Instamart),
+      plus a stint founding a food-tech startup. I like shipping features real customers use,
+      and making existing systems faster and cheaper.
+    </p>
+    <ul class="stack">
+      <li>Java</li><li>Spring Boot</li><li>Kafka</li><li>AWS</li>
+      <li>PostgreSQL</li><li>Redis</li><li>DynamoDB</li><li>Camunda 8</li>
+    </ul>
+    <div class="actions">
+      <a class="btn primary" href="Rashmi_Resume.pdf" target="_blank" rel="noopener">View CV</a>
+      <a class="btn" href="Rashmi_Resume.pdf" download>Download PDF</a>
+      <a class="btn" href="https://github.com/i-am-rashmi" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <footer>Full portfolio coming soon.</footer>
+  </main>
+</body>
+</html>
